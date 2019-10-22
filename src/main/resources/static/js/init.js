@@ -6,18 +6,19 @@ $(document).ready(function(){
       let o = document.querySelector('#operation').value
       let a = document.querySelector('#val1').value
       let b = document.querySelector('#val2').value
+      let res = document.querySelector('#result')
       if (o == 1) {
-        request.getSum(a,b);
+        res.innerHTML = request.getSum(a,b);
       } else if (o == 2) {
-        request.getSubstract(a,b);
+        res.innerHTML = request.getSubstract(a,b);
       } else if (o == 3) {
-        request.getMultiply(a,b);
+        res.innerHTML = request.getMultiply(a,b);
       } else if (o == 4) {
-        request.getDivide(a,b);
+        res.innerHTML = request.getDivide(a,b);
       } else if (o == 5) {
-        request.getSquare(a);
+        res.innerHTML = request.getSquare(a);
       } else if (o == 6) {
-        request.getExponent(a,b);
+        res.innerHTML = request.getExponent(a,b);
       }
     });
 });
