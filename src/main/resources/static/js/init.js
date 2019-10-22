@@ -23,9 +23,9 @@ $(document).ready(function(){
 });
 
 var request = (function () {
-    let path = "https://";
+    let path = "https://mathlogicheroku.herokuapp.com";
     let apiVersion = "v1";
-    let url = "/api/"+apiVersion+"/math/"
+    let url = path + "/api/"+apiVersion+"/math/"
 
     var getRequest = function (url,callback) {
         $.get(url,callback)
